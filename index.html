@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html>
 <body>
-<pre id="r">LOCKED</pre>
-
+<pre id="r">NO</pre>
 <script>
-const pass = prompt("Password:");
-if (btoa(pass) === "dW5jYW5ueQ==") { // uncanny
-  document.getElementById("r").innerText = "DEBUG_ON";
-} else {
-  document.getElementById("r").innerText = "Haha skid";
+if (btoa(prompt("Password:")) === "dW5jYW5ueQ==") { // uncanny
+  document.getElementById("r").innerText = "OK_" + Date.now();
 }
 </script>
-
 </body>
 </html>
